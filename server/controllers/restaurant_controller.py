@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
 from server.models.restaurant import Restaurant
-from server.config import db
+from server.app import db
 
 restaurant_bp = Blueprint('restaurant_bp', __name__, url_prefix='/restaurants')
 
